@@ -1,0 +1,214 @@
+@import './iconfont.css';
+
+.Heador{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    background: #01afc7;
+    color: white;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.Heador .left{
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 20px;
+    line-height: 40px;
+    padding: 0 15px;
+    cursor: pointer;
+}
+
+.Heador .city {
+    line-height: 40px;
+    flex: 1;
+    text-align: center;
+    cursor: pointer;
+}
+
+.Heador .search {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 15px;
+    cursor: pointer;
+    text-align: right;
+}
+
+
+/* footer 组件 先使用display: box; 排列元素  使子元素排列在一行
+    在使用 display: inline-flex; 使子元素排成一列
+*/
+
+.footer {
+    transition: height 2s,bottom 2s ease-in-out;
+     position: fixed;
+     bottom: 0;
+     width: 100%;
+     height: 46px;
+     display: flex;
+     background: #f8f8f8;
+     color: #999;
+ }
+
+.footerAnim {
+    position: fixed;
+    bottom: -50px;
+    width: 100%;
+    height: 46px;
+    display: flex;
+    background: #f8f8f8;
+    color: #999;
+}
+.footer div{
+    width: 25%;
+    text-align: center;
+    display: inline-flex;
+    flex-direction: column;
+    padding-top: 8px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.footer div span{
+    margin-bottom: 4px;
+}
+
+
+/* Time 组件  先使用display: box; 水平排列
+    在使用 disp: inline-box; 垂直排列
+*/
+
+.time {
+    transition: margin-top 2s, height 2s ease-in-out;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #01afc7;
+    margin-top: 40px;
+}
+
+.timeAnim {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: #01afc7;
+    margin-top: -300px;
+
+}
+
+.time div {
+    flex: 1;
+    text-align: center;
+    padding: 4px 0;
+    border-radius: 2px;
+    color:white;
+}
+
+.time div ul {
+    font-size: 10px;
+}
+.time div ul li {
+    margin-bottom: 4px;
+}
+
+.time div .line{
+    width: 0;
+    height: 30px;
+    border-left: 2px solid #ccc;
+    float: left;
+}
+
+/* content样式 */
+
+.content {
+    position: absolute;
+    width: 100%;
+    color: #999;
+    margin-top: 100px;
+    padding-bottom: 60px;
+    overflow: auto;
+}
+
+.content .list-content{
+    width: 100%;
+    font-size: 12px;
+}
+
+.content .list-content .item {
+    border-bottom: 1px solid rgba(197, 197, 197, 0.3);
+    display: flex;
+}
+
+.content .list-content .item .list-info{
+    flex: 5;
+    padding: 10px 15px;
+}
+
+.list-content .item .list-info .company-info{
+    margin-top: 4px;
+}
+
+.list-content .item .list-info .airport{
+    display: flex;
+    text-align: center;
+}
+
+.list-content .item .list-info .airport div{
+    flex: 1;
+}
+
+.list-content .item .list-info .airport .from-info{
+    text-align: left;
+}
+
+.list-content .item .list-info .airport .to-info{
+    text-align: right;
+}
+
+.item .list-info .airport div p{
+    margin: 6px auto;
+}
+
+.item .list-info .airport div .from-time, .item .list-info .airport div .to-time{
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+}
+
+.list-content .item .list-info .airport .airpot-icon {
+    margin-top: 12px;
+    color: #999;
+    text-align: center;
+}
+
+.content .list-content .item .price1{
+    flex: 2;
+    padding: 10px 15px;
+    text-align: right;
+}
+
+.content .list-content .item .price1 .price1-price{
+    font-size: 16px;
+    color: #ff8025;
+}
+
+.content .list-content .item .price1 p{
+    margin-top: 6px;
+}
+
+.content .list-content .item .price1 .price1-info{
+    background: #ff8025;
+    color: white;
+    position: relative;
+    right: -64%;
+    width: 60px;
+}
